@@ -1,30 +1,9 @@
-# https://www.youtube.com/watch?v=BxKahT39AGA
-# Passo a passo do projeto
-# Passo 1: Entrar no sistema da empresa
-   # https://dlp.hashtagtreinamentos.com/python/intensivao/tabela
-# Passo 2: Fazer login
-# Passo 3: Importar a base de dados de produtos
-# Passo 4: Cadastrar 1 produto
-# Passo 5: Repetir o cadastro para todos os produtos
-
-# pyautougui.click -> clicar com o mouse
-# pyautogui.write -> escrever um texto
-# pyautogui.press -> aperta 1 tecla
-# pyautogui.hotkey -> atalho (combinação de teclas)
-# pyautogui.hotkey("ctrl", "c")
+import pyautogui 
+import time 
+import pandas as pd
 
 
-# abrir o chrome
-# entrar no link
-
-# pyautogui.PAUSE = 0.3 faz uma pausa a cada comando. O time.sleep() a gente é quem define quando deve pausar
-# esperar o site carregar
-import pyautogui # pip install pyautogui
-import time #p/ dar a pausa
-import pandas as pd #pip install
-#  pandas numpy openpyxlcodigo  
-
-tabela = pd.read_csv("produtos.csv") #tem que estar no mesmo diretório
+tabela = pd.read_csv("produtos.csv") 
 
 #pyautogui.PAUSE = 0.4
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
